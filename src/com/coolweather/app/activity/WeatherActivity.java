@@ -78,11 +78,11 @@ public class WeatherActivity extends Activity implements android.view.View.OnCli
 		}
 	}
 	private void queryWeatherCode(String countyCode){
-		String address="http://weather.com.cn/data/list3/city"+countyCode+".xml";
+		String address="http://www.weather.com.cn/data/list3/city"+countyCode+".xml";
 		queryFromSever(address,"countyCode");
 	}
 	private void queryWeatherInfo(String weatherCode){
-		String address="http://weather.com.cn/data/cityinfo"+weatherCode+".html";
+		String address="http://www.weather.com.cn/data/cityinfo/"+weatherCode+".html";
 		queryFromSever(address,"weatherCode");
 	}
 	private void queryFromSever(final String address,final String type){
